@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+body
+  font-family: Courier
+  font-size: 18px
+  background-color: white
+
+h1, h2, h3
+  text-align: center
+  border-bottom: 1px solid
+  margin: 0px 15%
+
+.example
+  background-color: gainsboro
+  border: 3px solid
+  margin: 10px 15%
+  font-family: Helvetica
+  >
+  .body
+    padding: 10px
+    margin: 10px
+    >
+    h1, h2, h3, h4, h5, h6
+      text-align: left
+      border: 0px
+      margin: 0px
+    .info
+      background-color: cadetblue
+      color: white
+      text-align: center
+      font-size: 15px
+      padding: 8px 25px
+      border-top: 1px solid
+
+.list-inline
+  list-style-type: none
+  margin: 0px
+  padding: 0px
+  align-content: center
+  > li
+    display: inline
+    border: 1px solid grey
+    padding: 5px
+    margin: -1px
+
+blockquote
+  background: #f9f9f9
+  border-left: 10px solid #ccc
+  margin: 1.5em 10px
+  padding: 1em 10px
+  quotes: "“" "”" "‘" "’"
+  &:before
+    color: #ccc
+    content: open-quote
+    font-size: 4em
+    line-height: 0.1em
+    margin-right: 0.25em
+    vertical-align: -0.4em
+  &:after
+    color: #ccc
+    content: close-quote
+    font-size: 4em
+    line-height: 0.1em
+    margin-left: 0.25em
+    vertical-align: -0.4em
+  p
+    display: inline
